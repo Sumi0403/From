@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> form </title>
+        <style>
+            form{
+                padding: 20px 0;width: 500px;
+                background-color: aqua;
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+            }
+            form div{
+                display: flex;
+                justify-content:space-around;
+                padding:5px;align-items: center;
+            }
+            input[type="text"],
+            input[type="date"] {
+                width: 200px;height: 50px;
+            }
+            .button {
+                display: flex;
+                justify-content: center;
+                gap: 50px;
+            }
+            .btn1{
+                background-color:green;color: azure;
+            }
+            .btn2{
+                background-color: blue;color: azure;
+            }
+            h2{
+                text-align: center;
+            }
+        </style>
+    </head>
+        <body>
+            <h2><u> Project Management</u></h2>
+            <form>
+                
+                <div>
+                    <label for="Project Name"> Project Name:</label>
+                    <input type="text" name="Project Name" id="=Project Name" placeholder="project name">
+                </div><br>
+
+                <div>
+                    <label for="Assigned to"> Assigned to:</label>
+                    <input type="text" name="Assigned to" id="=Assigned to"placeholder="Mr.Shopnil roy">
+                </div><br>
+
+                <div>
+                    <label for="Start Date"> Start Date:</label>
+                    <input type="date" name="Start Date" id="=Start Date">
+                </div><br>
+
+                <div>
+                    <label for="End Date"> End Date:</label>
+                    <input type="date" name="End Date" id="=End Date">
+                </div><br>
+
+                
+                <div>
+                    <label for="Prioeity">Prioeity:</label>
+                    <input type="radio" name="Prioeity" id="=Prioeity" value="High">
+                    <label for="">High</label>
+                    <input type="radio" name="Prioeity" id="=Prioeity" value="Average">
+                    <label for="">Average</label>
+                    <input type="radio" name="Prioeity" id="=Prioeity" value="Low">
+                    <label for="">Low</label>
+                </div>
+            <br>
+
+                <div>
+                    <label for="Discription">Discription:</label>
+                    <input type="text">
+                </div><br>
+
+                <div class="button">
+                    <button class="btn1">Submit</button>
+                    <button class="btn2">Clear</button>
+                  
+                </div>
+                 
+            </form>
+          
+
+            
+        </body>
+    
+</html>
